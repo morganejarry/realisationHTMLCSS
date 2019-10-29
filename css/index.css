@@ -53,21 +53,6 @@ body{
     text-decoration: none;
 }
 
-/*.navbar{
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr 5fr ; 
-}
-.lienlogo{
-    grid-column: 2/3;
-}
-.elem_menu{
-    grid-column: 4/5;
-}
-
-.elem_menu:hover{
-    color: black;
-}*/
-
 /*TEXTE ACCUEIL + FORMULAIRE*/
 .start_for_free{
     font-family: 'unb_probold';
@@ -103,7 +88,6 @@ body{
     font-family: 'unbpro_regular';
     color: white;
     background-color: var(--button-color);
-    text-align: center;
     font-size: 15px;
     border-radius: 30px;
     border: none;
@@ -152,12 +136,14 @@ body{
     text-align: center;
 }
 /*PORTRAITS*/
+.portraits{
+    line-height: 30px;
+}
 .steve{
     display: grid;
     grid-template-columns: 2fr 2fr 0.5fr 2fr 2fr;
     color: var(--color-text);
 }
-
 .description{
     grid-column: 2/3;
     width: 110%;
@@ -204,8 +190,26 @@ body{
 .citation2{
     color: black;
     background-color: var(--background);
-    height: 220px;
-    width: 550px;
+    width: 420px;
     grid-column: 2/3;
-    margin-top: 17%;
+    margin-top: -45%;
+    padding-left: 14%;
+    height: 280px;
+}
+
+#button_start_for_free3{
+    font-family: 'unbpro_regular';
+    color: white;
+    background-color: var(--button-color);
+    font-size: 15px;
+    border-radius: 30px;
+    border: none;
+    height: 40px;
+    width: 190px;
+    padding-bottom: 55px;
+    margin: 5% 40% 0 40%;
+}
+#button_start_for_free3:hover{
+    background-color: var(--button-hover-color);
+    transition: 0.2s;
 }
