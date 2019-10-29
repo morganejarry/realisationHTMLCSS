@@ -132,7 +132,7 @@ body{
     font-size: 22px;
 }
 .partenaires{
-    padding-top: 2%;
+    padding: 2% 2% 0 2%;
     text-align: center;
 }
 /*PORTRAITS*/
@@ -211,5 +211,27 @@ body{
 }
 #button_start_for_free3:hover{
     background-color: var(--button-hover-color);
+    transition: 0.2s;
+}
+/*INTEGRATIONS*/
+.integrations{
+    background-color: #71d1dc;
+    font-family: 'unb_probold';
+    color: white;
+}
+#button_integrations{
+    font-family: 'unbpro_regular';
+    color: #71d1dc;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 30px;
+    border: none;
+    height: 40px;
+    width: 190px;
+    padding-bottom: 55px;
+    
+}
+#button_inegrations:hover{
+    box-shadow: 10%;
     transition: 0.2s;
 }
