@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'unb_probold';
+    src: url('../fonts/unbbold/unb_pro_bold-webfont.eot');
+    src: url('../fonts/unbbold/unb_pro_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/unbbold/unb_pro_bold-webfont.woff2') format('woff2'),
+         url('../fonts/unbbold/unb_pro_bold-webfont.woff') format('woff'),
+         url('../fonts/unbbold/unb_pro_bold-webfont.ttf') format('truetype'),
+         url('../fonts/unbbold/unb_pro_bold-webfont.svg#unb_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'unbpro_regular';
+    src: url('../fonts/unbpro_regular/unb_pro_regular-webfont.eot');
+    src: url('../fonts/unbpro_regular/unb_pro_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/unbpro_regular/unb_pro_regular-webfont.woff2') format('woff2'),
+         url('../fonts/unbpro_regular/unb_pro_regular-webfont.woff') format('woff'),
+         url('../fonts/unbpro_regular/unb_pro_regular-webfont.ttf') format('truetype'),
+         url('../fonts/unbpro_regular/unb_pro_regular-webfont.svg#unb_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .navbar{ 
     padding: 2% 20% 0 20%;  
@@ -10,12 +33,74 @@
 }
 
 .elem_menu {
-    color: grey;
-    padding-right: 1%;
+    font-family: 'unbpro_regular';
+    color: #9292A8;
+    padding-right: 2%;
     text-align: center;
     text-decoration: none;
 }
 
 .elem_menu:hover{
     color: black;
+}
+
+.start_for_free{
+    font-family: 'unb_probold';
+    padding-top: 5%;
+    text-align: center;
+    font-size: 45px;
+    margin: auto;
+}
+.start_for_free_1{
+    margin: auto;
+    height: 60px;
+}
+.start_for_free_2{
+    margin: auto;
+}
+.start_for_free_3{
+    margin: auto;
+    color: #9292A8;
+    font-size: 20px;
+}
+
+#email{
+    font-family: 'unbpro_regular';
+    color: #9292A8;
+    font-size: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: -10px -10px 50px 10px #E9E6E6;
+    padding: 10px;
+    width: 460px;
+}
+#button_start_for_free{
+    font-family: 'unbpro_regular';
+    color: white;
+    background-color: #5168EC;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    width: 160px;
+}
+#button_start_for_free:hover{
+    background-color: #7486F0;
+    transition: 0.2s;
+}
+
+.knowledgeIsTheNewCool{
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
+    padding-top: 1%;
+}
+.left{
+    grid-column: 1/2;
+}
+.center{
+    grid-column: 3/4;
+}
+.right{
+    grid-column: 5/6;
 }
