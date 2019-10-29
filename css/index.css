@@ -1,0 +1,21 @@
+
+.navbar{ 
+    padding: 2% 20% 0 20%;  
+}
+
+.lienlogo{
+    text-align: right;
+    padding-right: 40%;
+    text-decoration: none;
+}
+
+.elem_menu {
+    color: grey;
+    padding-right: 1%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.elem_menu:hover{
+    color: black;
+}
