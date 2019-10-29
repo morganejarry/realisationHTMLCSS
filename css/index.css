@@ -1,3 +1,4 @@
+/*FONTS*/
 @font-face {
     font-family: 'unb_probold';
     src: url('../fonts/unbbold/unb_pro_bold-webfont.eot');
@@ -22,6 +23,18 @@
     font-style: normal;
 }
 
+/*VARIABLES*/
+:root{
+    --button-color: #5168EC;
+    --button-hover-color: #7486F0;
+    --color-text: #9292A8;
+    --background: #F5F7FF;
+}
+
+body{
+    font-family: 'unbpro_regular';
+}
+/*MENU DE NAVIGATION*/
 .navbar{ 
     padding: 2% 20% 0 20%;  
 }
@@ -34,16 +47,28 @@
 
 .elem_menu {
     font-family: 'unbpro_regular';
-    color: #9292A8;
+    color: var(--color-text);
     padding-right: 2%;
     text-align: center;
     text-decoration: none;
 }
 
-.elem_menu:hover{
-    color: black;
+/*.navbar{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 5fr ; 
+}
+.lienlogo{
+    grid-column: 2/3;
+}
+.elem_menu{
+    grid-column: 4/5;
 }
 
+.elem_menu:hover{
+    color: black;
+}*/
+
+/*TEXTE ACCUEIL + FORMULAIRE*/
 .start_for_free{
     font-family: 'unb_probold';
     padding-top: 5%;
@@ -60,47 +85,127 @@
 }
 .start_for_free_3{
     margin: auto;
-    color: #9292A8;
+    color: var(--color-text);
     font-size: 20px;
 }
-
 #email{
     font-family: 'unbpro_regular';
-    color: #9292A8;
+    color: var(--color-text);
     font-size: 15px;
     border-radius: 30px;
     border: none;
     box-shadow: -10px -10px 50px 10px #E9E6E6;
-    padding: 10px;
+    height: 40px;
     width: 460px;
+    padding: 0px 0px 15px 30px;
 }
 #button_start_for_free{
     font-family: 'unbpro_regular';
     color: white;
-    background-color: #5168EC;
+    background-color: var(--button-color);
     text-align: center;
     font-size: 15px;
     border-radius: 30px;
     border: none;
-    padding: 10px;
+    height: 40px;
     width: 160px;
+    padding-bottom: 55px;
+    margin-left: -5%;
 }
 #button_start_for_free:hover{
-    background-color: #7486F0;
+    background-color: var(--button-hover-color);
     transition: 0.2s;
 }
 
+/*3 IMAGES "KNOWLEDGE IS THE NEW COOL"*/
 .knowledgeIsTheNewCool{
     display: grid;
     grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
     padding-top: 1%;
 }
 .left{
+    padding-top: 30%;
     grid-column: 1/2;
 }
 .center{
     grid-column: 3/4;
 }
 .right{
+    padding-top: 55%;
     grid-column: 5/6;
+}
+
+/*BRING YOUR WORK TOGETHER*/
+.notes{
+    background-color: var(--background);
+}
+
+/*JOIN*/
+.titrePartenaires{
+    font-family: 'unb_probold';
+    color: var(--color-text);
+    text-align: center;
+    font-size: 22px;
+}
+.partenaires{
+    padding-top: 2%;
+    text-align: center;
+}
+/*PORTRAITS*/
+.steve{
+    display: grid;
+    grid-template-columns: 2fr 2fr 0.5fr 2fr 2fr;
+    color: var(--color-text);
+}
+
+.description{
+    grid-column: 2/3;
+    width: 110%;
+    padding-top: 15%;
+}
+#title_portrait{
+    font-family: 'unb_probold';
+    font-size: 40px;
+    color: black;
+    line-height: 50px;
+    
+}
+.citation{
+    color: black;
+    background-color: var(--background);
+    height: 220px;
+    width: 550px;
+    grid-column: 4/5;
+    margin-top: 17%;
+    padding-left: 14%;
+}
+.photo_portrait{
+    border-radius: 35%;
+    position: absolute;
+    margin: 2% 0% 0% -6%;
+}
+.emily{
+    display: grid;
+    grid-template-columns: 2fr 2fr 0.5fr 2fr 2fr;
+    color: var(--color-text);
+}
+
+.oleg{
+    display: grid;
+    grid-template-columns: 2fr 2fr 0.5fr 2fr 2fr;
+    color: var(--color-text);
+}
+.description2{
+    grid-column: 4/5;
+    width: 110%;
+    padding-top: 15%;
+}
+
+.citation2{
+    color: black;
+    background-color: var(--background);
+    height: 220px;
+    width: 550px;
+    grid-column: 2/3;
+    margin-top: 17%;
 }
