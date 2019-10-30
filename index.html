@@ -47,24 +47,31 @@
             <!--<img class="logoJaune" src="pictures/logoJaune.png">-->
 
             <div class="text_container">
-                <p class="title">Bring your work together</p>    
-                <!--<img class="logoBleu" src="pictures/logoBleu.png">-->
-                <div class="contenu notes">
-                    <p class="petits_titres">NOTES</p>
+                <p class="title">Bring your work together</p>  
+
+                <div id="contenu">
+                    <label for="toggle-block">NOTES</label>
                     <h2>Collaborate on documents</h2>
-                    <p>Writting can be as easy as chatting on Slack,<br> without getting lost in the next day. Create<br> long-lasting documents without the chaos</p>
+                    <input id="toggle-block" name="toggle-block" type="checkbox" checked/>
+                    <div id="my-block">
+                        <p>Writting can be as easy as chatting on Slack,<br> without getting lost in the next day. Create<br>long-lasting documents without the chaos</p>
+                    </div>
                 </div>
-                <div class="contenu wiki">
-                    <p class="petits_titres">WIKI</p>
+                <div id="contenu">
+                    <label for="toggle-block">WIKI</label>
                     <h2>Build your team's knowledge base</h2>
-                    <p>Don’t leave people guessing. Smoothly<br> onboard new employees and keep everyone<br> aligned by sharing what your team values</p>
-                    
+                    <input id="toggle-block" name="toggle-block" type="checkbox" checked/>
+                    <div id="my-block">
+                        <p>Don’t leave people guessing. Smoothly<br> onboard new employees and keep everyone<br> aligned by sharing what your team values</p>
+                    </div>
                 </div>
-                <div class="contenu tasks">
-                    <p class="petits_titres">TASKS</p>
+                <div id="contenu">
+                    <label for="toggle-block">TASKS</label>
                     <h2>Track projects</h2>
-                    <p>Running projects in too many different tools<br> is a recipe for missing important details.<br> Start shipping everything on time.</p>
-                    
+                    <input id="toggle-block" name="toggle-block" type="checkbox" checked/>
+                    <div id="my-block">
+                        <p>Running projects in too many different tools<br> is a recipe for missing important details.<br> Start shipping everything on time.</p>
+                    </div>
                 </div>
                 <button id="button_bring" type="submit">Start for free</button>
             </div>

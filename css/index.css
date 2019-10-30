@@ -148,35 +148,43 @@ body{
     grid-column: 3/4;
     margin-left: auto;
 }
-.logoBleu{
-    position: absolute;
-}
+
 .title{
     font-family: 'unb_probold';
     font-size: 25px;
 }
-.petits_titres{
-    font-family: 'unb_probold';
-    color: var(--color-text);
-    margin-bottom: -2%;
-}
+
 h2{
     font-size: 22px;
 }
-.contenu{
-    margin-top: 0%;
+#contenu{
+    margin-bottom: 10%;
     width: 450px;
-    height: 210px;
+    /*height: 210px;*/
     line-height: 30px;
     box-shadow: 0 0 1em rgb(222, 229, 238);
     border-radius: 10px;
 }
-.contenu:active{
+.contenu label{
+    cursor: pointer;
+}
+#my-block{
+    display: none;
+    line-height: 30px;
+    border: 1px dotted #fff;
+    margin:2px;
+    transition: all 1s;
+  }
+#toggle-block:checked + #my-block{
+    display: block;
+    transition: all 1s;
+    max-height: 210px;
+    background-color: var(--background)
+}
+
+.contenu:focus{
     box-shadow: none;
     background-color: var(--background);   
-}
-.petits_titres:active{
-    color: var(--button-color)
 }
 
 #button_bring{
