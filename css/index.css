@@ -285,6 +285,37 @@ h2{
     background-color: var(--button-hover-color);
     transition: 0.2s;
 }
+/*READY TO USE TEMPLATE*/
+.templates{
+    background-color: var(--button-color);
+    text-align: center;
+    margin-bottom: -0.25%;
+}
+.texte_templates{
+    padding: 2% 0 2% 0;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    line-height: 25px;
+    font-family: 'unb_probold';
+}
+#button_templates{
+    font-family: 'unbpro_regular';
+    color: var(--button-color);
+    background-color: white;
+    font-size: 15px;
+    border-radius: 30px;
+    border: none;
+    height: 40px;
+    width: 190px;
+    padding-bottom: 55px;
+    
+}
+#button_templates:hover{
+    box-shadow: 10%;
+}
+
+
 /*INTEGRATIONS*/
 .integrations{
     display: grid;
@@ -317,5 +348,4 @@ h2{
 }
 #button_inegrations:hover{
     box-shadow: 10%;
-    transition: 0.2s;
 }
