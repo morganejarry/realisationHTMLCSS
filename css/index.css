@@ -120,8 +120,13 @@ body{
 }
 
 /*BRING YOUR WORK TOGETHER*/
+.container_bringYourWork{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    padding-top: 2%;
+}
 .container{
-    position: relative;
+    grid-column: 2/3;
     display: inline-block;
     width: 520px;
     height: 637px;
@@ -133,16 +138,18 @@ body{
 }
 .picture_container{
     position: absolute;
-    left: 50px;
-    top: 30px;
+    left: 8%;
+    top: 5%;
     box-shadow: 0 0 1em rgb(222, 229, 238);
     border-radius: 15px;
 }
 
 .text_container{
+    grid-column: 3/4;
+    margin-left: auto;
+}
+.logoBleu{
     position: absolute;
-    padding-left: 60%;
-    margin-top: -35%;
 }
 .title{
     font-family: 'unb_probold';
@@ -225,8 +232,7 @@ h2{
 .citation{
     color: black;
     background-color: var(--background);
-    height: 220px;
-    width: 550px;
+    width: 110%;
     grid-column: 4/5;
     margin-top: 17%;
     padding-left: 14%;
@@ -273,7 +279,7 @@ h2{
     height: 40px;
     width: 190px;
     padding-bottom: 55px;
-    margin: 5% 40% 0 40%;
+    margin: 5% 40% 2% 40%;
 }
 #button_start_for_free3:hover{
     background-color: var(--button-hover-color);
@@ -281,9 +287,21 @@ h2{
 }
 /*INTEGRATIONS*/
 .integrations{
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr 2fr 1fr;
     background-color: #71d1dc;
     font-family: 'unb_probold';
     color: white;
+    padding: 5% 0 5% 0;
+}
+.texte_integrations{
+    grid-column: 2/3;
+    text-align: center;
+    font-size: 35px;
+    line-height: 25px;
+}
+.image_integrations{
+    grid-column: 4/5;
 }
 #button_integrations{
     font-family: 'unbpro_regular';
