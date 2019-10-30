@@ -36,7 +36,10 @@ body{
 }
 /*MENU DE NAVIGATION*/
 .navbar{ 
-    padding: 2% 20% 0 20%;  
+    padding: 2% 20% 0 20%; 
+    background-color: white;
+    top: 0;
+    position: sticky; 
 }
 
 .lienlogo{
@@ -48,7 +51,7 @@ body{
 .elem_menu {
     font-family: 'unbpro_regular';
     color: var(--color-text);
-    padding-right: 2%;
+    padding: 0 2% 5% 0;
     text-align: center;
     text-decoration: none;
 }
@@ -406,4 +409,16 @@ h2{
 }
 #button_inegrations:hover{
     box-shadow: 10%;
+}
+ /*AVIS*/
+
+.image_avis{
+    padding-top: 4%;
+    text-align: center;
+}
+
+.capture{
+    text-align: center;
+    font-family: 'unb_probold';
+    font-size: 40px;
 }
